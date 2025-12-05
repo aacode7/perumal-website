@@ -18,20 +18,18 @@ function App() {
   const { t } = useTranslation();
   const [loading, setLoading] = useState(true);
 
-  // Show loader for 3 seconds
+  // Show loader for 2 seconds
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 3000);
+    const timer = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(timer);
   }, []);
-
-  // 👉 Show Loader as First Screen
-  if (loading) {
-    return <Loader />;
-  }
 
   return (
     <div className="font-sans text-gray-900 bg-sandal/10 min-h-screen flex flex-col">
       <Navbar />
+
+      {/* Show Loader Overlay during loading */}
+      {loading && <Loader />}
 
       <main className="flex-grow">
         {/* HERO SECTION */}
