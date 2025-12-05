@@ -1,0 +1,23 @@
+/* Android font rendering fix */
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Inter', 'Noto Sans Telugu', 'Noto Sans Devanagari', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+/* Ensure Telugu and Hindi characters render properly */
+*[lang="te"],
+*[lang="hi"] {
+    font-family: 'Noto Sans Telugu', 'Noto Sans Devanagari', 'Inter', sans-serif !important;
+}
+
+/* Force proper Unicode rendering on buttons */
+button {
+    font-feature-settings: normal;
+    font-variant-ligatures: normal;
+}
