@@ -147,7 +147,6 @@ export default function Navbar() {
                                 onClick={handleLanguageChange(lang)}
                                 onTouchEnd={handleLanguageChange(lang)}
                                 type="button"
-                                role="button"
                                 aria-label={`Switch to ${lang.toUpperCase()} language`}
                                 style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}
                                 className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all duration-300 cursor-pointer select-none ${i18n.language === lang
@@ -230,13 +229,12 @@ export default function Navbar() {
                         {["en", "te", "hi"].map((lang) => (
                             <button
                                 key={lang}
-                                onClick={handleLanguageChange(lang)}
-                                onTouchEnd={handleLanguageChange(lang)}
-                                type="button"
-                                role="button"
-                                aria-label={`Switch to ${lang.toUpperCase()} language`}
-                                style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent', minWidth: '60px', minHeight: '44px' }}
-                                className={`px-6 py-2.5 rounded-full text-sm font-bold border-2 transition-all duration-300 cursor-pointer select-none ${i18n.language === lang
+                            onClick={handleLanguageChange(lang)}
+                            onTouchEnd={handleLanguageChange(lang)}
+                            type="button"
+                            aria-label={`Switch to ${lang.toUpperCase()} language`}
+                            style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent', minWidth: '60px', minHeight: '44px' }}
+                            className={`px-6 py-2.5 rounded-full text-sm font-bold border-2 transition-all duration-300 cursor-pointer select-none ${i18n.language === lang
                                     ? "bg-gradient-to-r from-gold via-gold-light to-gold text-maroon-dark shadow-xl shadow-gold/40 border-gold-dark scale-110"
                                     : "text-gold border-gold/40 hover:bg-white/10 hover:scale-105 active:bg-white/20"
                                     }`}
