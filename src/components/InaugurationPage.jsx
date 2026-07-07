@@ -113,7 +113,7 @@ export default function InaugurationPage({ onLaunch }) {
           </p>
           <h1 className="font-serif text-4xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl">
             <span style={{ color: "#fcf6ba", WebkitTextFillColor: "#fcf6ba" }}>
-              Temple Launch Ceremony
+              Temple Website Launch Ceremony
             </span>
           </h1>
           <div className="mx-auto max-w-4xl launch-host-card">
