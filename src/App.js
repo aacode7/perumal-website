@@ -33,7 +33,7 @@ function App() {
 
       <main className="flex-grow">
         {/* HERO SECTION */}
-        <section id="home" className="relative" style={{ height: '100vh', height: '100dvh', minHeight: '-webkit-fill-available' }}>
+        <section id="home" className="relative" style={{ height: '100dvh', minHeight: '-webkit-fill-available' }}>
           <Carousel />
           <div className="absolute inset-0 flex flex-col justify-end items-center pb-20 md:pb-32 z-10 pointer-events-none">
             <div className="text-center animate-on-scroll">

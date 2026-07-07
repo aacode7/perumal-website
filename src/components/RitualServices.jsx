@@ -100,7 +100,6 @@ export default function RitualServices() {
                             onClick={handleBookNowClick}
                             onTouchEnd={handleBookNowClick}
                             type="button"
-                            role="button"
                             aria-label="Book ritual service now"
                             style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}
                             className="bg-gradient-gold text-maroon-dark font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2 whitespace-nowrap cursor-pointer select-none"
@@ -114,7 +113,6 @@ export default function RitualServices() {
                             onClick={handleDonationClick}
                             onTouchEnd={handleDonationClick}
                             type="button"
-                            role="button"
                             aria-label="Make a donation"
                             style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}
                             className="bg-gradient-gold text-maroon-dark font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2 whitespace-nowrap cursor-pointer select-none"

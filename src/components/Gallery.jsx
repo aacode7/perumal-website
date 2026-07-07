@@ -66,7 +66,6 @@ export default function Gallery() {
                             onClick={() => setShowMore(true)}
                             onTouchEnd={() => setShowMore(true)}
                             type="button"
-                            role="button"
                             aria-label="View all gallery images"
                             style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}
                             className="bg-maroon text-gold px-10 py-4 rounded-full font-bold shadow-xl hover:bg-gold hover:text-maroon active:scale-95 transition-all duration-300 transform hover:scale-105 tracking-wider uppercase text-sm cursor-pointer select-none"

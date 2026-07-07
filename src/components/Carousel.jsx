@@ -16,7 +16,7 @@ export default function Carousel() {
     ];
 
     return (
-        <div className="w-full relative" style={{ height: '100vh', height: '100dvh', minHeight: '-webkit-fill-available' }}>
+        <div className="w-full relative" style={{ height: '100dvh', minHeight: '-webkit-fill-available' }}>
             <Swiper
                 modules={[Autoplay, Pagination, EffectFade]}
                 effect="fade"

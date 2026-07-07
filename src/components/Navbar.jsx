@@ -147,7 +147,6 @@ export default function Navbar() {
                                 onClick={handleLanguageChange(lang)}
                                 onTouchEnd={handleLanguageChange(lang)}
                                 type="button"
-                                role="button"
                                 aria-label={`Switch to ${lang.toUpperCase()} language`}
                                 style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}
                                 className={`px-3 py-1.5 rounded-full text-xs font-bold transition-all duration-300 cursor-pointer select-none ${i18n.language === lang
@@ -233,7 +232,6 @@ export default function Navbar() {
                                 onClick={handleLanguageChange(lang)}
                                 onTouchEnd={handleLanguageChange(lang)}
                                 type="button"
-                                role="button"
                                 aria-label={`Switch to ${lang.toUpperCase()} language`}
                                 style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent', minWidth: '60px', minHeight: '44px' }}
                                 className={`px-6 py-2.5 rounded-full text-sm font-bold border-2 transition-all duration-300 cursor-pointer select-none ${i18n.language === lang

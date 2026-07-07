@@ -28,7 +28,6 @@ export default function ComingSoonModal({ isOpen, onClose, title }) {
                         onClose();
                     }}
                     type="button"
-                    role="button"
                     style={{
                         touchAction: 'manipulation',
                         WebkitTapHighlightColor: 'transparent',
@@ -83,7 +82,6 @@ export default function ComingSoonModal({ isOpen, onClose, title }) {
                             onClose();
                         }}
                         type="button"
-                        role="button"
                         aria-label="Close modal"
                         style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}
                         className="bg-gradient-gold text-maroon-dark px-8 py-3 rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 uppercase tracking-wider cursor-pointer select-none"
