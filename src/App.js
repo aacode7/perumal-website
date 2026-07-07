@@ -67,7 +67,7 @@ function App() {
           <Contact />
         </main>
 
-        <Footer />
+        <Footer onOpenInauguration={() => setHasLaunched(false)} />
       </div>
     </div>
   );
