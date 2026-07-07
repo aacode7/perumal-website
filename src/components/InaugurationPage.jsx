@@ -120,11 +120,11 @@ export default function InaugurationPage({ onLaunch }) {
           </p>
           <h1 className="font-serif text-4xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl">
             <span style={{ color: "#fcf6ba", WebkitTextFillColor: "#fcf6ba" }}>
-              Temple Website Launch Ceremony
+              Temple Website Launch
             </span>
           </h1>
           <div className="mx-auto max-w-4xl launch-host-card">
-            <p className="launch-host-label">Hearty Welcome to</p>
+            <p className="launch-host-label">Ascription Technologies Hearty Welcomes</p>
             <p className="launch-host-copy launch-host-name">
               <span>Sri Hanumantha Rao IAS</span>, Commissioner, Endowment Dept., Government of Telangana.
             </p>
@@ -262,13 +262,13 @@ export default function InaugurationPage({ onLaunch }) {
             }`}
           >
             <span className="relative z-10">
-              {isLaunching ? "Launching..." : "Launch Ceremony"}
+              {isLaunching ? "Launching..." : "LAUNCH"}
             </span>
             <span className="absolute inset-0 launch-shine opacity-0 group-hover:opacity-100" />
           </button>
 
           <p className="max-w-lg text-xs uppercase tracking-[0.4em] text-white/55">
-            {showCelebrate ? "Color papers flying for the celebration" : "A ceremonial ribbon cut before the temple opens"}
+            {showCelebrate ? "Color papers flying for the celebration" : "Developed by Ascription Technologies"}
           </p>
         </div>
       </div>
