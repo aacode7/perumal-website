@@ -108,6 +108,13 @@ export default function InaugurationPage({ onLaunch }) {
 
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center">
         <div className="mb-7 space-y-3">
+          <div className="mx-auto mb-6 w-fit overflow-hidden rounded-[1.75rem] border border-gold/40 bg-white/10 p-2 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-sm">
+            <img
+              src="/M_Hanumata_Rao_IAS.jpg"
+              alt="Sri Hanumantha Rao IAS"
+              className="h-40 w-32 rounded-[1.25rem] object-cover sm:h-48 sm:w-36 md:h-56 md:w-44"
+            />
+          </div>
           <p className="text-xs sm:text-sm uppercase tracking-[0.6em] text-gold/80">
             Grand Inauguration
           </p>
