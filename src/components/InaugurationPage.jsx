@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const confettiPieces = Array.from({ length: 32 }, (_, index) => {
   const offset = index - 16;
@@ -24,6 +24,10 @@ export default function InaugurationPage({ onLaunch }) {
   const [phase, setPhase] = useState("idle");
   const [countdown, setCountdown] = useState(3);
   const [ribbonSplit, setRibbonSplit] = useState(false);
+  const [hideLaunchDate, setHideLaunchDate] = useState(false);
+  const launchTimerRef = useRef(null);
+  const today = new Date();
+  const todayLabel = `${String(today.getDate()).padStart(2, "0")}/${String(today.getMonth() + 1).padStart(2, "0")}/${today.getFullYear()}`;
   const countdownDelayMs = 1350;
   const ribbonOpenDelayMs = 900;
 
@@ -84,14 +88,21 @@ export default function InaugurationPage({ onLaunch }) {
     document.body.style.overflow = "hidden";
 
     return () => {
+      if (launchTimerRef.current) {
+        clearTimeout(launchTimerRef.current);
+      }
       document.body.style.overflow = previousOverflow;
     };
   }, []);
 
   const handleLaunch = () => {
     if (isLaunching) return;
-    setRibbonSplit(false);
-    setPhase("cutting");
+    setHideLaunchDate(true);
+
+    launchTimerRef.current = setTimeout(() => {
+      setRibbonSplit(false);
+      setPhase("cutting");
+    }, 250);
   };
 
   return (
@@ -168,6 +179,13 @@ export default function InaugurationPage({ onLaunch }) {
             >
               <span className="ribbon-center-half ribbon-center-half-left" />
               <span className="ribbon-center-half ribbon-center-half-right" />
+              <span
+                className={`relative z-10 px-1 text-center font-serif text-[0.72rem] font-bold uppercase tracking-[0.22em] text-maroon-dark transition-all duration-300 sm:text-xs ${
+                  hideLaunchDate ? "opacity-0 scale-90" : "opacity-100 scale-100"
+                }`}
+              >
+                {todayLabel}
+              </span>
             </div>
             <div
               className={`flex w-1/2 items-center justify-start bg-gradient-to-r from-maroon-light via-maroon to-maroon-dark pl-8 text-white transition-transform duration-1000 ease-out ribbon-half-right ${
